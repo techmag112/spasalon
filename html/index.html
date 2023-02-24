@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA салон</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo.svg" alt="СПА САЛОН">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Бронирование</a>
+                <a href="#" class="header__link">Как нас найти</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <div class="user_block">
+                С возвращением, Василий!<br><br>
+                Последний раз вы у нас были в 19:30 26/12/22
+            </div>
+            <button data-modal class="btn btn_white">Авторизуйтесь</button>
+        </div>
+    </header>
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+        <div class="sidepanel__divider"></div>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/facebook.svg" alt="facebook">
+        </a>
+    </div>
+
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/tabs/tai.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        ТАЙСКИЙ УХОД ПО ТЕЛУ    <span class="price">4 600 ₽</span><br>
+                        60 мин.<br>
+                        ТАЙСКИЙ УХОД ПО ТЕЛУ    <span class="price">6 300 ₽</span><br>
+                        90 мин.<br>
+                        ТАЙСКИЙ УХОД ПО ТЕЛУ    <span class="price">6 800 ₽</span><br>
+                        120 мин.<br>
+                        ТАЙСКИЙ СТОУН-УХОД      <span class="price">6 300 ₽</span><br>
+                        90 мин.
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/lur.jpg" alt="elite">
+                    <div class="tabcontent__descr">
+                       АЮРВЕДИЧЕСКИЙ МАСЛЯНЫЙ УХОД<br> ШИРОДХАРА <span class="price">7 200 ₽</span><br>   
+                       30 МИН.<br>
+                       АЮРВЕДИЧЕСКИЙ МАСЛЯНЫЙ<br> УХОД АБХЪЯНГА <span class="price">6 500 ₽</span><br>
+                       60 МИН.<br>
+                       АЮРВЕДИЧЕСКИЙ УХОД<br>ПО ЛИЦУ КАМАЛА    <span class="price">3 300 ₽</span><br>
+                       30 МИН.
+                    </div>
+                </div> 
+                <div class="tabcontent">
+                    <img src="img/tabs/ton.jpg" alt="post">
+                    <div class="tabcontent__descr">
+                        ОБЩЕУКРЕПЛЯЮЩИЙ УХОД<br> ПО ТЕЛУ    <span class="price">2 600 ₽</span><br>
+                        30 мин.<br>
+                        ОБЩЕУКРЕПЛЯЮЩИЙ УХОД<br> ПО ТЕЛУ    <span class="price">5 200 ₽</span><br>
+                        60 мин. <br>
+                        ОБЩЕУКРЕПЛЯЮЩИЙ УХОД<br> ЗА  СТОПАМИ <span class="price">2 600 ₽</span><br>
+                        30 мин.
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/ras.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        АРОМАУХОД ПО ТЕЛУ   <span class="price">5 200 ₽</span><br>
+                        60 мин.<br>
+                        РАССЛАБЛЯЮЩИЙ УХОД ПО ТЕЛУ <span class="price">4 600 ₽</span><br>
+                        ТРАВЯНЫМИ МЕШОЧКАМИ<br>
+                        60 мин.<br>
+                        CТОУНТЕРАПИЯ            <span class="price">5 500 ₽</span><br>
+                        90 мин.
+                    </div>   
+                </div>
+                <div class="tabheader">
+                    <h3>К вашим услугам</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Тайский спа</div>
+                        <div class="tabheader__item">Люрведа</div>
+                        <div class="tabheader__item">Тонизирующий</div>
+                        <div class="tabheader__item">Расслабляющий</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Живи полной жизнью!</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu hide">
+        <h2 class="title">Уникальное предложение на ваш день рождения + скидка на все услуги 5%</h2>
+
+        <div class="menu__field">
+            <div class="container">
+                <div class="menu__item">
+                    <img src="img/heat.jpg" alt="vegy">
+                    <h3 class="menu__item-subtitle">Прогрев в PRIVATE зоне</h3>
+                    <div class="menu__item-descr">В помещение, обшитом натуральным ароматным деревом, созданы оптимальные условия для сухого прогрева тела. Под его воздействием в организме происходит интенсивная работа потовых и сальных желез и очищение кожи от шлаков и токсинов.</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>2000</span> руб.</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/aroma.jpg" alt="elite">
+                    <h3 class="menu__item-subtitle">Арома-уход по телу</h3>
+                    <div class="menu__item-descr">Мягкая и одновременно глубокая проработка мышц улучшает кровообращение и циркуляцию крови. Кожа становится нежной, натуральное масло придают ей упругость, питают и увлажняют.</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>2600</span> руб</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/head.jpg" alt="post">
+                    <h3 class="menu__item-subtitle">Расслабляющий спа-уход головы</h3>
+                    <div class="menu__item-descr">Расслабляющий массаж головы. Он помогает усилить кровообращение кожи головы, это отличная профилактика выпадения волос.</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>1900</span> руб</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <br>
+            <div class="title">Заказывай пробный день прямо сейчас!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
+                <img src="icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion hide">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Акция для зарегистрированных клиентов!</div>
+                <div class="promotion__descr">
+                    Мы ценим каждого клиента! Успейте ею воспользоваться! 
+                    Сегодня в день вашего рождения предоставляется скидка на все услуги в размере <span>5%!</span>
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">Осталось до конца акции:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        дней
+                    </div> 
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        часов
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        минут
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        секунд
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">Мы в социальных сетях:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">Или позвоните нам</div>
+                <a href="#" class="link">+380678341034</a>
+                <a href="#" class="link">+380500941356</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form  action="#" method="post">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Авторизация</div>
+                    <input data-log required placeholder="Ваше логин" name="login" type="text" class="modal__input">
+                    <input data-pass required placeholder="Ваш пароль" name="password" type="password" class="modal__input">
+                    <input class="btn btn_dark btn_min" type="submit" data-login value="Войти">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                    <div class="modal__close" data-close2>&times;</div>
+                    <div class="modal__title">Поздравляем с днем рождения!<br>Только сегодня - для Вас специальное предложение и скидка 5% на все услуги!<br></div>
+                    <div class="modal__key"><button class="btn btn_dark btn_min">Ok</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
