@@ -3,8 +3,6 @@
 $_POST = json_decode( file_get_contents("php://input"), true );
 $user = $_POST["login"] ?? null;
 $password = $_POST["password"] ?? null;
-//$user = 'user2';
-//$password = '&2*RsNBKcsuyQ9Bw';
 
 checkAuth($user, $password);
 
@@ -16,8 +14,7 @@ function checkAuth($user, $password) {
         $_SESSION["auth"] = true;
         $_SESSION['id'] = $i; 
         $_SESSION['login'] = $user; 
-        $_SESSION['name'] = getCurrentUser($i, $dbUsers); 
-        //$dbUsers[$i]["name"];
+        $_SESSION['name'] = getCurrentUser($i, $dbUsers) ?? 'Незнакомец'; 
         $name = $_SESSION['name'];
         $_SESSION["birthday"] = $dbUsers[$i]["birthday"];
         $birth = $_SESSION["birthday"];
